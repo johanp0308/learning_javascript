@@ -1,0 +1,12 @@
+
+{
+    "cadena":"Hola",
+    "numero":24,
+    "booleano": true,
+    "arreglo":[2,3,4,2],
+    "objeto":{
+        "email":"Easofa@fwf.coa",
+        "numero2":12
+    },
+    "nulo":null
+}

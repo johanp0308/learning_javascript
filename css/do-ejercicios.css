@@ -1,0 +1,77 @@
+:root{
+    --main-font: sans-serif;
+    --font-size: 16px;
+    --main-color: yellow;
+    --second-color: #222;
+    --second-modal-color: rgba(0,0,0,.5);
+    --container-width: 1200px;
+}
+
+
+html{
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+*,::before,
+::after{
+    box-sizing: inherit;
+}
+
+
+body{
+    margin: 0;
+    overflow-x:hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: var(--main-color);
+}
+
+main{
+    text-align: center;
+}
+
+section{
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--container-width);
+    min-height: 100vh;
+    text-align: center;
+    background-color: rgb(0, 255, 255);
+
+}
+header h1{
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50% ;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
