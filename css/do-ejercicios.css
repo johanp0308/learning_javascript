@@ -59,6 +59,10 @@ header h1{
     text-align: center;
 }
 
+.panel{
+    position: fixed;
+    z-index: ;
+}
 
 .panel-btn{
     position: fixed;
