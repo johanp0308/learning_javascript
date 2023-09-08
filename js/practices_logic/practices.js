@@ -29,7 +29,10 @@ const main = function(){
 // main();
 
 /* primos palindromos */
-
-const apicuoNumber = function (){
-
+const apicuoNumber = (primo) => {
+    rev = primo.toString().split("").reverse().join("");
+    if(primo.toString() === rev){
+        return true;
+    }
+    return false;
 }
