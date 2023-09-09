@@ -9,7 +9,7 @@ class Display{
         this.signos = {
             sumar: '+',
             restar: '-',
-            dividir: '%',
+            dividir: '/',
             multiplicar: 'x'
         }
     }
