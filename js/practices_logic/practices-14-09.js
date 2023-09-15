@@ -12,17 +12,19 @@ If the string's length is odd drop the central element.
 
 */
 
-var cadena = "abcdef"
+function charConcat(string) {
+    let con_String = "";
+    let strnew = string;
+    if (string.length % 2 !== 0) {
+        strnew = string.split("").filter((item) => item !== string[(string.length) / 2]).join("");
+    }
+    let cont = 0;
+    for (var i = strnew.length - 1, j = 0;i >= 0 && j < (strnew.length-1) / 2;i--, j++) {
+        cont++;
+        con_String += strnew[j] + strnew[i] + cont;
+    }
 
-const conct_string = (str) => {
-	let con_String = "";
-	let strnew = str.split("").filter((item) => item !== str[(str.length-1)/2]).join("");
-	let cont = 0; 
-	for (var i =strnew.length - 1, j = 0 ; i >=0 && j<strnew.length/2; i--,j++) {
-		cont++;
-		con_String += strnew[j]+strnew[i]+cont;
-	}
-	return con_String;
-};
+    return con_String;
+}
 
-console.log(conct_string(cadena));
+console.log(charConcat("abcdefghi"));
